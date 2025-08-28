@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cortes de Carne - El Buen Corte</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2f2f2f;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .img-container img {
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .img-container img:hover {
+      transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil cuando se toca */
+    }
+
+    .footer {
+      background-color: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn-back:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cortes de Carne</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="cortes.html">Cortes de Carne</a>
+    <a href="cocteles.html">Cócteles</a>
+    <a href="postres.html">Postres</a>
+    <a href="formulario2.html">Opiniones</a>
+  </nav>
+
+  <section class="section">
+    <h2>Nuestros Cortes Premium</h2>
+    <p>Seleccionamos las mejores carnes para ofrecerte cortes perfectos: Rib-eye, Filete, T-bone, entre otros. ¡Una experiencia inigualable!</p>
+    <div class="img-container">
+      <img src="Rib-bye.jpg" alt="Rib-eye" />
+      <img src="Filete Mignon.jpg" alt="Filete Mignon" />
+      <img src="T-Bone.jpg" alt="T-Bone" />
+    </div>
+    <a class="btn-back" href="index.html">Volver a la Página Principal</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 El Buen Corte. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

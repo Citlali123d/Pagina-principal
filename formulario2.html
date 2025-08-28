@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Feedback - Atención al Cliente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Formulario de Feedback - Atención al Cliente</h1>
+    <form action="https://formspree.io/f/mzzvlnko" method="POST">
+      
+      <label>
+        Tu correo electrónico:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        1. ¿Fuiste recibido/a cordialmente al llegar al restaurante?
+        <select name="recepcion_cordial" required>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label>
+        2. ¿El mesero explicó bien el menú de cortes de carne y cócteles?
+        <select name="explicacion_menu" required>
+          <option value="Sí, muy claro">Sí, muy claro</option>
+          <option value="Más o menos">Más o menos</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label>
+        3. ¿La temperatura y cocción de la carne fue la que solicitaste?
+        <select name="coccion_correcta" required>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+          <option value="Parcialmente">Parcialmente</option>
+        </select>
+      </label>
+
+      <label>
+        4. ¿Qué cóctel probaste y qué te pareció?
+        <textarea name="opinion_coctel" placeholder="Escribe el nombre del cóctel y tu opinión" rows="3"></textarea>
+      </label>
+
+      <label>
+        5. ¿Te ofrecieron alguna recomendación o sugerencia durante tu visita?
+        <select name="recomendaciones_ofrecidas" required>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+
+      <label>
+        6. ¿El personal fue atento y resolvió tus dudas?
+        <select name="atencion_personal" required>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+          <option value="Poco atento">Poco atento</option>
+        </select>
+      </label>
+
+      <label>
+        7. ¿Notaste limpieza y orden en el lugar?
+        <select name="limpieza_local" required>
+          <option value="Sí, excelente">Sí, excelente</option>
+          <option value="Aceptable">Aceptable</option>
+          <option value="Debe mejorar">Debe mejorar</option>
+        </select>
+      </label>
+
+      <label>
+        8. ¿Te sentiste cómodo/a con el nivel de ruido y la música?
+        <select name="ambiente_musica" required>
+          <option value="Sí, muy cómodo/a">Sí, muy cómodo/a</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Molesto">Molesto</option>
+        </select>
+      </label>
+
+      <label>
+        9. ¿Hubo algún detalle que marcó positivamente tu experiencia?
+        <textarea name="detalle_positivo" placeholder="Cuéntanos qué te gustó más" rows="3"></textarea>
+      </label>
+
+      <label>
+        10. ¿Qué mejorarías específicamente en nuestro servicio?
+        <textarea name="mejoras_sugeridas" placeholder="Queremos seguir mejorando" rows="3"></textarea>
+      </label>
+
+      <button type="submit">Enviar Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>
